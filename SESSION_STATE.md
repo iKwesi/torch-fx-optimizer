@@ -31,16 +31,29 @@ Build a graph optimization tool for PyTorch models using torch.fx that:
 - [ ] Demo notebook showing the tool in action
 
 ## Current Phase
-DAY 0: Setup and crash course
+DAY 0: Setup and crash course → DAY 1: Architecture design
 
 ## Completed
-- [ ] uv environment setup
-- [ ] PyTorch installation verified
-- [ ] MPS working
-- [ ] Project structure created
-- [ ] Crash course notebook completed
+- [x] uv environment setup
+- [x] PyTorch installation verified
+- [x] MPS working
+- [x] Project structure created
+- [x] Crash course notebook completed (notebooks/00_essentials_only.ipynb)
+- [x] Conv2d deep dive notebook (notebooks/conv_example.ipynb)
 
-## Next Steps
-1. Complete crash course (notebooks/00_essentials_only.ipynb)
-2. Document learning in LEARNING_LOG.md
-3. Move to architecture design
+## Current Understanding
+- ✅ Can trace models with torch.fx and inspect computation graphs
+- ✅ Can iterate over graph nodes and understand graph structure
+- ✅ Can perform basic graph manipulations (add/remove/replace nodes)
+- ✅ Understand Conv2d shape calculations and layer stacking rules
+- ✅ Ready to design the optimizer architecture
+
+## Next Phase: ARCHITECTURE DESIGN
+- [ ] Create ARCHITECTURE.md with system design
+- [ ] Define optimization pass algorithms
+- [ ] Design testing strategy before implementation
+
+## Time Tracking
+- **Time Spent**: ~1-1.5 hours
+- **Remaining**: ~26-33 hours (out of 28-35 total)
+- **Status**: On track ✅
