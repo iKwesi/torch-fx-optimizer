@@ -1,0 +1,43 @@
+[project]
+name = "torch-fx-optimizer"
+version = "0.1.0"
+description = "A compiler-grade graph optimizer for PyTorch using torch.fx - implements memory-efficient recomputation and redundant operation elimination passes"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "torch>=2.9.1",
+    "torchaudio>=2.9.1",
+    "torchvision>=0.24.1",
+]
+
+authors = [
+    {name = "Raphael Blankson", email = "rbblankson34@gmail.com"}
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.8",
+    "mypy>=1.19.1",
+    "pytest>=9.0.2",
+    "pytest-benchmark>=5.2.3",
+    "ruff>=0.14.10",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.mypy]
+python_version = "3.13"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
